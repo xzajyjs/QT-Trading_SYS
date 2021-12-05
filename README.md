@@ -37,6 +37,6 @@ if(QT_VERSION>=QT_VERSION_CHECK(5,6,0))
 ---
 
 ## 效果截图
-![](https://serverless-page-bucket-lv779z7b-1307395653.cos-website.ap-shanghai.myqcloud.com/qt_trading/1.png)
-![](https://serverless-page-bucket-lv779z7b-1307395653.cos-website.ap-shanghai.myqcloud.com/qt_trading/2.png)
-![](https://serverless-page-bucket-lv779z7b-1307395653.cos-website.ap-shanghai.myqcloud.com/qt_trading/3.png)
+![](1.png)
+![](2.png)
+![](3.png)
