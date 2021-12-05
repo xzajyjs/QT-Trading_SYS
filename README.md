@@ -37,6 +37,6 @@ if(QT_VERSION>=QT_VERSION_CHECK(5,6,0))
 ---
 
 ## 效果截图
-![](1.png)
-![](2.png)
-![](3.png)
+![](./1.png)
+![](./2.png)
+![](./3.png)
