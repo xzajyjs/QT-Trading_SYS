@@ -17,7 +17,7 @@
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.15
 CONFIG += sdk_no_version_check
 ```
-> 在主函数中添加如下内容以适配高分屏
+> 在主函数中添加如下内容以适配Windows平台高分屏
 ```
 if(QT_VERSION>=QT_VERSION_CHECK(5,6,0))
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -32,7 +32,7 @@ if(QT_VERSION>=QT_VERSION_CHECK(5,6,0))
     - haha123/haha123
     - test/123456
 - 由于Windows对于高分屏的优化差，在某些显示器上可能出现文字压缩、挤压等错误，MacOS和Linux上暂未发现此问题。
-- 本软件采用Sqlite数据库离线存储数据，如后期有上线需要，可更换为其他如Mysql、Oracle、Redis、Sql Server等数据库。
+- 本软件采用Sqlite数据库离线存储数据，如后期有上线需要，可更换为其他如Mysql、Oracle、Redis、Sql Server等。
 
 ---
 
