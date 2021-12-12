@@ -58,6 +58,13 @@ border-radius:8px;
       </layout>
      </item>
      <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>退出登录</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="myOrderButton">
        <property name="text">
         <string>我的订单</string>

@@ -40,6 +40,8 @@ private slots:
 
     void on_RenewpushButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MenuWidget *ui;
     QSqlDatabase db;

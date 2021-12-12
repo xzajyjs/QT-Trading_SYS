@@ -172,11 +172,11 @@ void MainWindow::searchSlot()
     if(!name.isEmpty())
     {
         if(extern_commodity == "goods")
-            comModel->setFilter(QObject::tr("名称 = '%1'").arg(name));
+            comModel->setFilter(QObject::tr("名称 like '%%1%'").arg(name));
         else if(extern_commodity == "users")
-            comModel->setFilter(QObject::tr("username = '%1'").arg(name));
+            comModel->setFilter(QObject::tr("username like '%%1%'").arg(name));
         else if(extern_commodity == "orders")
-            comModel->setFilter(QObject::tr("username = '%1'").arg(name));
+            comModel->setFilter(QObject::tr("username like '%%1%'").arg(name));
         comModel->select();
         seLineEdit->clear();
     }

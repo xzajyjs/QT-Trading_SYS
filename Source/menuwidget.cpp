@@ -133,8 +133,19 @@ void MenuWidget::on_myinfoButton_clicked()
 void MenuWidget::on_buyButton_clicked()
 {
     extern_id = ui->buyIdEdit->text().toInt();
-    buyGoodsDialog *buy = new buyGoodsDialog;
-    buy->show();
+    QSqlQuery query;
+    QString str = QString("SELECT 编号 FROM goods WHERE 编号=%1").arg(extern_id);
+    query.exec(str);query.next();
+    if(query.value(0).toString() == ""){
+        qDebug() << query.value(0).toString();
+        QMessageBox msg;
+        msg.setText("不存在该商品");
+        msg.exec();
+    }
+    else{
+        buyGoodsDialog *buy = new buyGoodsDialog;
+        buy->show();
+    }
 }
 
 // 排序
@@ -159,7 +170,7 @@ void MenuWidget::on_orderButton_clicked()
 void MenuWidget::on_searchButton_clicked()
 {
     QString search = QString("SELECT 编号,名称,价格,数量,备注 FROM goods "
-                             "WHERE 名称='%1'").arg(ui->searchIdEdit->text());
+                             "WHERE 名称 LIKE '%%1%'").arg(ui->searchIdEdit->text());
     qDebug() << search;
     model.setQuery(search);
     ui->table->setModel(&model);

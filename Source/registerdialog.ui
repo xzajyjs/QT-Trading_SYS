@@ -116,6 +116,12 @@ QDialog{
        </item>
        <item row="2" column="1">
         <widget class="QLineEdit" name="newSec_passwd">
+         <property name="minimumSize">
+          <size>
+           <width>137</width>
+           <height>0</height>
+          </size>
+         </property>
          <property name="maxLength">
           <number>16</number>
          </property>
@@ -148,22 +154,6 @@ QDialog{
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
-        <widget class="QLineEdit" name="phoneEdit">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>137</width>
-           <height>0</height>
-          </size>
-         </property>
-        </widget>
-       </item>
        <item row="4" column="1">
         <widget class="QLineEdit" name="addressEdit">
          <property name="sizePolicy">
@@ -192,6 +182,13 @@ QDialog{
          </property>
          <property name="text">
           <string>收货地址:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="phoneEdit_2">
+         <property name="maxLength">
+          <number>11</number>
          </property>
         </widget>
        </item>
